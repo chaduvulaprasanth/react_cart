@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 1px 1px 2px black;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.home {
+  cursor: pointer;
+}
+.cart {
+  cursor: pointer;
+}
