@@ -5,7 +5,9 @@ export default function Product(props) {
     <div className="card">
       <h1>{props.title}</h1>
       <p>{props.price}</p>
-      <button onClick={() => props.addcart(props)}>Add to Cart</button>
+      <button className="addtocart" onClick={() => props.addcart(props)}>
+        Add to Cart
+      </button>
     </div>
   );
 }

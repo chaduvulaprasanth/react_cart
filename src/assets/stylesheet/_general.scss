@@ -1,17 +1,114 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
 .header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  box-shadow: 1px 1px 2px black;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  margin-bottom: 1.5rem;
+}
+
+.cart-logo {
+  cursor: pointer;
+  color: tomato;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  cursor: pointer;
+  .cart-length {
+    margin-left: 0.5rem;
+    color: tomato;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
 .card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
 }
-.home {
+h1 {
+  width: 5rem;
+}
+.addtocart,
+.checkout-btn,
+.submit-btn {
+  cursor: pointer;
+  color: tomato;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  border: 1px solid tomato;
+}
+.checkout-btn {
+  margin-left: 25rem;
+  margin-top: 2rem;
   cursor: pointer;
 }
-.cart {
-  cursor: pointer;
+form {
+  margin-top: 3rem;
+}
+input,
+select {
+  display: block;
+  text-align: center;
+  margin-left: 4rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+label {
+  display: block;
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .header {
+    margin-bottom: 3rem;
+  }
+  .cart {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+    .cart-length {
+      margin-left: 0.5rem;
+      color: tomato;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  .addtocart,
+  .checkout-btn,
+  .submit-btn {
+    font-size: 1.3rem;
+  }
+  h1,
+  p {
+    font-size: 1.5rem;
+  }
+  .cart-logo {
+    font-size: 3rem;
+  }
 }
